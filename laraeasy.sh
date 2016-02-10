@@ -143,7 +143,7 @@ if [ "$1" != "" ]; then
 											    @include('includes.header')
 											    $html
 											    @include('includes.footer')
-											</html>" >> "${PWD}/test/resources/views/$name.blade.php";
+											</html>" >> "${PWD}/$1/resources/views/$name.blade.php";
 								else
 									echo ""
 									printf "${YELLOW}Paste Complete html${NC}\n"
@@ -151,7 +151,7 @@ if [ "$1" != "" ]; then
 									echo ""
 									html=$(cat)
 									
-									echo "$html" >> "${PWD}/test/resources/views/$name.blade.php";
+									echo "$html" >> "${PWD}/$1/resources/views/$name.blade.php";
 								fi
 								break;;
 					        No ) 
@@ -165,7 +165,7 @@ if [ "$1" != "" ]; then
 											        </div>
 											    </body>
 											    @include('includes.footer')
-											</html>" >> "${PWD}/test/resources/views/$name.blade.php";
+											</html>" >> "${PWD}/$1/resources/views/$name.blade.php";
 								else
 									echo "<!DOCTYPE html>
 											<html>
@@ -176,7 +176,7 @@ if [ "$1" != "" ]; then
 											        </div>
 											    </body>
 											    <footer></footer>
-											</html>" >> "${PWD}/test/resources/views/$name.blade.php";
+											</html>" >> "${PWD}/$1/resources/views/$name.blade.php";
 								fi
 								break;;
 					    esac
